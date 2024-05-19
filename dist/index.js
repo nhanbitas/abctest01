@@ -3,32 +3,25 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "Accordion", {
-  enumerable: true,
-  get: function get() {
-    return _Accordion["default"];
-  }
+var _Accordion = require("./Accordion");
+Object.keys(_Accordion).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _Accordion[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _Accordion[key];
+    }
+  });
 });
-Object.defineProperty(exports, "AppTest", {
-  enumerable: true,
-  get: function get() {
-    return _AppTest["default"];
-  }
+var _Tooltip = require("./Tooltip");
+Object.keys(_Tooltip).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _Tooltip[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _Tooltip[key];
+    }
+  });
 });
-Object.defineProperty(exports, "TestComponent", {
-  enumerable: true,
-  get: function get() {
-    return _TestComponent["default"];
-  }
-});
-Object.defineProperty(exports, "Tooltip", {
-  enumerable: true,
-  get: function get() {
-    return _Tooltip["default"];
-  }
-});
-var _TestComponent = _interopRequireDefault(require("./TestComponent"));
-var _AppTest = _interopRequireDefault(require("./AppTest"));
-var _Accordion = _interopRequireDefault(require("./Accordion"));
-var _Tooltip = _interopRequireDefault(require("./Tooltip"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
