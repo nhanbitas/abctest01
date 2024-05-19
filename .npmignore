@@ -1,4 +1,5 @@
 /src
+/build
 /public
 /.babelrc
 /postcss.config.js
