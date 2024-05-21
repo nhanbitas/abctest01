@@ -1,6 +1,13 @@
 /src
 /build
+/dist
 /public
 /.babelrc
+/.eslintignore
+/.eslintrc.js
+/.gitignore
+/.prettierrc
+/.prettierignore
+/tsconfig.json
 /postcss.config.js
 /webpack.config.js
