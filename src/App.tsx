@@ -1,17 +1,15 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import reactlogo from './assets/images/react.svg';
 import './assets/styles/app.css';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './components';
 
 const App: FC = () => {
-  const [fullname, setFullname] = useState('Nhân');
-  console.log(fullname);
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <img src={reactlogo} alt='react' width={100} height={100} />
-      <h1>{fullname}</h1>
-      <h2>Hello world </h2>
-      <button onClick={() => setFullname('Nguyễn')}>Click</button>
+
+      <h2>Demo for Accordion</h2>
+
       <Accordion
         style={{ width: '500px', margin: '50px' }}
         type='single'

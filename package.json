@@ -1,12 +1,12 @@
 {
   "name": "abctest01-typescript",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "ui/index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "build:lib": "babel src/components --out-dir ui --extensions \".ts,.tsx\" && npx postcss src/components/**/*.css --base src/components --dir ui",
+    "build:lib": "tsc --project tsconfig.lib.json && npx babel src/components --out-dir ui --extensions \".ts,.tsx\" && npx postcss src/components/**/*.css --base src/components --dir ui",
     "preview": "serve dist/ -s",
     "lint": "eslint --ext js,jsx,ts,tsx src/",
     "lint:fix": "eslint --fix --ext js,jsx,ts,tsx src/",
@@ -70,6 +70,6 @@
     "webpack-dev-server": "^5.0.4"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   }
 }

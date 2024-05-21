@@ -9,12 +9,9 @@ node_modules/
 dist/
 build/
 
+
 # testing
 /coverage
-
-# production
-/build
-/dist
 
 # misc
 .DS_Store

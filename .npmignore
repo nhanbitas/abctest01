@@ -11,3 +11,4 @@
 /tsconfig.json
 /postcss.config.js
 /webpack.config.js
+/tsconfig.lib.json
