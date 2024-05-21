@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import reactlogo from './assets/images/react.svg';
 import './assets/styles/app.css';
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './components';
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent, Badge } from './components';
 
 const App: FC = () => {
   return (
@@ -34,6 +34,10 @@ const App: FC = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+
+      <h2>Demo for Badge</h2>
+
+      <Badge color='red'>Base</Badge>
     </div>
   );
 };
